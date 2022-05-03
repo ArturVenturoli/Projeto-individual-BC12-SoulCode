@@ -83,7 +83,7 @@ os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = serviceAccount
 
 """**2.1. Conectar Atlas MongoDb**"""
 
-client = pymongo.MongoClient("mongodb+srv://soulcode:a1b2c3@arturaula.jko5l.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+client = pymongo.MongoClient("path")
 
 db = client['aulamongo']
 colecao_av_bruto = db.bc12_av_bruto
@@ -101,7 +101,7 @@ path = 'gs://projeto_bc12_av/bruto/marketing_campaign.csv' # Endereço Gsutil do
 
 """**2.3. Conectar MySQL**"""
 
-conexao = mysql.connector.connect("35.184.69.166", "root", "a1b2c3", "db_bc12_av")
+conexao = mysql.connector.connect("host, user, password, db")
 
 def conexao_db(host, user, password, db):
   conexao = None
@@ -118,7 +118,7 @@ def conexao_db(host, user, password, db):
 
   return conexao
 
-conexao = conexao_db("35.184.69.166", 'root', "a1b2c3", "db_bc12_av")
+conexao = conexao_db("host, user, password, db")
 
 """#**3. Exibir todas as colunas sem '...'**"""
 
