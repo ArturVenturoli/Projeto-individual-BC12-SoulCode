@@ -1,4 +1,4 @@
-# Projeto individual BC12 SoulCode
+# Projeto individual BC12 SoulCode - Feito em Março de 2022
  Neste projeto deveríamos aplicar os conhecimentos adquiridos durante o curso.
  O tempo disponibilizado para tarefa foi 2 dias.
 
